@@ -1,0 +1,20 @@
+| Start Byte | ID | Command Code | Open Bracket | Data | Close Bracket |
+|------------|----|--------------|--------------|------|---------------|
+| @          | XX |    YY        |       {      | ZZZZ |       }       |
+
+| Command Code (YY) | Command Description     | Data                             |
+|-------------------|-------------------------|----------------------------------|
+| SM                | Set channel mode        | 0: Constant, 1: Strobe           |
+| SI                | Set channel intensity   | 0 - 255: Intensity               |
+| ST                | Strobe                  | None                             |
+| SW                | Set strobe width        | 0 - 99.99 ms                     |
+| SD                | Set strobe delay        | 0 - 99.99 ms                     |
+| RT                | Restart esp32           | None                             |
+| MP                | Motor play (run)        | 0: Anticlockwise, 1: Clockwise   |
+| MS                | Motor stop              | None                             |
+| SP                | Set param (speed)       | 12 - 0.5 time per rotation (tpr) |
+| MR                | Motor release           | 0: No release, 1: Release        |
+
+[0.5,3.575,6.65,9.725,12]
+
+
